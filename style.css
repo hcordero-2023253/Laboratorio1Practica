@@ -1,0 +1,136 @@
+/*LOGIN, AGREGAR*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./img/fondo.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 440px;
+    padding: 50px 100px;
+    border-radius: 12px;
+    box-shadow: 30px 40px 60px  #000;
+    color: #fff;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.control input{
+    width: 100%;
+    display: block;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: solid 2px #000;
+}
+
+.control input[type="button"]{
+    background-color: rgb(40, 29, 224);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+.control input[type="submit"]:hover{
+    opacity: .3;
+}
+
+.link{
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*CONTACTOS, DETALLES*/
+.contact-list{
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 440px;
+    padding: 12px 60px;
+    border-radius: 12px;
+    box-shadow: 30px 40px 60px  #000;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+}
+
+.contact-list li{
+    border-top: solid 1px #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.container{
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container input{
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin: 1em 5px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.container input[type="button"]{
+    background-color: rgb(40, 29, 224);;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ddd;
+    transition: color 0.3s;
+    cursor: pointer; 
+}
+
+.star.checked {
+    color: gold;
+}
+
+.star:hover {
+    color: orange;
+}
+
+.starFav{
+    color: gold;
+}
