@@ -45,7 +45,7 @@ h1{
     margin: 1em 0;
     color: #fff;
     background-color: transparent;
-    border-bottom: solid 2px #000;
+    border-bottom: solid 3px #000;
 }
 
 .control input[type="button"]{
@@ -133,4 +133,112 @@ h1{
 
 .starFav{
     color: gold;
+}
+
+/*PERFIL*/
+.user{
+    position: absolute;
+    top: 50%;
+    left: 33.33%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 500px;
+    max-width: 90%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: -30px 40px 60px  #000;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.6;
+}
+.data{
+    position: absolute;
+    top: 55.6%;
+    left: 67.66%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 500px;
+    max-width: 90%;
+    padding: 12px 30px;
+    border-radius: 12px;
+    box-shadow: 30px 40px 60px  #000;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.6;
+}
+/*DISEÑO RESPONSIVE DE LAS BOX*/
+
+@media (max-width: 768px) {
+    .user,
+    .data {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none; /* Desactiva transformación */
+        margin: 20px auto; /* Centra los elementos verticalmente */
+        box-shadow: none;
+        text-align: center;
+    }
+    
+    .user {
+        margin-bottom: 20px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .user,
+    .data {
+        padding: 12px 10px; 
+        font-size: 14px;
+    }
+}
+
+/*DISEÑO RESPONSIVE DEL TITULO*/
+
+.cont {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    max-width: 600px; 
+    padding: 20px; 
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cont {
+        padding: 15px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        padding: 10px; 
+        font-size: 12px;
+    }
+}
+
+/*PENDIENTES*/
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 500px;
+    max-width: 90%;
+    padding: 12px 30px;
+    border-radius: 12px;
+    box-shadow: 30px 40px 60px  #000;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.edit,
+.delete {
+    cursor: pointer;
 }

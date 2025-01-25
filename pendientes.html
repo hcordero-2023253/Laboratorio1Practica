@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Lista de Pendientes</h1>
+        <form id="task">
+            <input type="text" id="tasked" placeholder="Escribe una tarea">
+            <select id="priority">
+                <option value="1">URGENTE</option>
+                <option value="2">ALTA</option>
+                <option value="3">IMPORTANTE</option>
+                <option value="4">MEDIO</option>
+                <option value="5">BAJA</option>
+            </select>
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
