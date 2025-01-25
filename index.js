@@ -26,13 +26,15 @@ const prioridad = document.getElementById('priority');
 const tareas = document.getElementById('tasked');
 const lista = document.getElementById('list');
 
-const tasks = [];
+let tasks = [];
 
 tarea.addEventListener('submit',(e)=>{
     e.preventDefault();
 
     const tareasInput = tareas.value.trim();
     const prioridades = parseInt(prioridad.value);
+
+    
     
     let prioridadNivel = {
         id : Date.now(),
@@ -74,9 +76,12 @@ const editarTarea = (id) => {
     const tarea = tasks.find((task) => task.id === id);
 
     if (tarea) {
-        const newText = prompt('Editar tarea: ', prioridadNivel.text);
-        if (newText) {
-            prioridadNivel.text = newText;
+        const newText = prompt('Editar tarea: ', tarea.text);
+        const newPrioridad = prompt('Editar prioridad: ',tarea.priority)
+        if (newText && newPrioridad !== null) {
+            tarea.text = newText;
+            tarea.priority = parseInt(newPrioridad);
+            ordenarTareas();
             reanderizarTareas();
         }
     }
@@ -84,6 +89,6 @@ const editarTarea = (id) => {
 
 //Eliminar tarea
 function eliminarTarea(id) {
-    tasks = tasks.filter((task) => task.id !== id);
+    tasks = tasks.filter((task) => task.id !== id); 
     reanderizarTareas();
 }
