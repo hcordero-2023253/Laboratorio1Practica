@@ -1,19 +1,18 @@
 //Agregar estrellas de favoritos(Solo agrega la estrella, no acutaliza los datos de favoritos)
-// window.addEventListener("DOMContentLoaded",()=>{
-//     //Star
-//     const startButton = document.querySelectorAll('.star');
+ window.addEventListener("DOMContentLoaded",()=>{
+     //Star
+     const startButton = document.querySelectorAll('.star');
 
-    
-//     startButton.forEach((star, index) => {
-//         star.addEventListener('click', function() {
-//             startButton.forEach(s => s.classList.remove('checked'));
-            
-//             for (let i = 0; i <= index; i++) {
-//                 startButton[i].classList.add('checked');
-//             }
-//         });
-//     });
-// })
+     startButton.forEach((star, index) => {
+         star.addEventListener('click', function() {
+             startButton.forEach(s => s.classList.remove('checked'));
+
+             for (let i = 0; i <= index; i++) {
+                 startButton[i].classList.add('checked');
+             }
+         });
+     });
+})
 
 //Nivel de Prioridad
 // 1: es urgente 
