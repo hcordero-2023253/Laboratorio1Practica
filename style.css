@@ -242,3 +242,35 @@ h1{
 .delete {
     cursor: pointer;
 }
+
+/*FOTO DE PERFIL*/
+.profile-container {
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+  }
+  .upload-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .upload-btn:hover {
+    background-color: #0056b3;
+  }
+  input[type="file"] {
+    display: none;
+  }
